@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
     lastName: {type:String},
     gender : {type:String},
     dateOfBirth : {type:Date, required:true},
-    type: {type:String,enum:['student','admin','instructor'],required:true}
+    type: {type:String,enum:['student','admin','instructor'],required:true,default:'student'}
 },{
     versionKey:false,
     timestamps:true,

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const evalutaionSchema = new mongoose.Schema(
   {
-    data_of_evaluation: { type: Date, required: true },
+    date_of_evaluation: { type: Date, required: true },
     instructor: {
       type: mongoose.Schema.Types.ObjectId,
       path: "user",

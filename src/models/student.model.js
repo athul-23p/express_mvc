@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const studentSchema = new mongoose({
+const studentSchema = new mongoose.Schema({
     roll_no : {type: Number, required: true},
     currentBatch: {
         type:mongoose.Schema.Types.ObjectId, 
@@ -17,4 +17,4 @@ const studentSchema = new mongoose({
     timestamps:true,
 });
 
-mongoose.exports = mongoose.model('student',studentSchema);
+module.exports = mongoose.model('student',studentSchema);

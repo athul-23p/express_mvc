@@ -9,7 +9,7 @@ const submissionSchema = new mongoose.Schema(
     },
     student_id: {
       type: mongoose.Schema.Types.ObjectId,
-      path: "student",
+      path: "user",
       required: true,
     },
     marks: {
